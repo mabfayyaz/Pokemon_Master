@@ -16,6 +16,9 @@ https://twitter.com/MABlearnsML
 For Github:
 https://github.com/mabfayyaz
 
+Codeacademy Code Link
+https://gist.github.com/971c8f87666a65a92500b3eba4f4fa59
+
 
 
 I might make some tutorials as well. If I do I will add Youtube Link. Thank you and any constructive feedbacks are welcomed.
