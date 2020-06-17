@@ -70,14 +70,25 @@ class Pokemon:
         else:
             print("""The Pokemon {name} has gain health of value {value} and 
             has now health of {new_health}.""".format(name=self.name, value= value,new_health=self.health))
+       
             
             
-    def attack(self, other_pokemon):
+    def attack(self, other_pokemon, strength = "Normal"):
+        self.strength = strength
+
         if self.is_knocked_out == True:
             print(f"Cannot attack because the Pokemon {self.name} is already knocked out!!")
-        
-        else:
+
+        elif self.is_knocked_out == False and self.strength == "Normal":
             other_pokemon.lose_health(pokemon_type[self.pokemon_type][other_pokemon.pokemon_type] * 99)
+
+        elif self.is_knocked_out == False and self.strength == "Strong":
+            other_pokemon.lose_health(pokemon_type[self.pokemon_type][other_pokemon.pokemon_type] * 99 * 2)
+
+        elif self.is_knocked_out == False and self.strength == "Weak":
+             print(f"You are too weak to attack, regain health or try harder")
+        
+                
             
 
 
